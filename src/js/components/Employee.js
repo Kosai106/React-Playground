@@ -3,15 +3,23 @@ import React from 'react';
 export default class Employee extends React.Component {
   constructor(props) {
     super(props);
+    this.mouseOver = this.mouseOver.bind(this);
+    this.mouseOut = this.mouseOut.bind(this);
     this.state = {
-      //mouseOver: this.src='https://media.giphy.com/media/9fbYYzdf6BbQA/giphy.gif',
-      animated: this.src='https://media.giphy.com/media/9fbYYzdf6BbQA/giphy.gif',
+      hover: false
     }
+  }
+
+  mouseOver() {
+    this.setState({hover: true});
+  }
+  mouseOut() {
+    this.setState({hover: false});
   }
 
   render() {
     var { name, job, email, img, gif } = this.props;
-    
+
     return (
       <div className='outer-circle'>
         <div className='inner-circle'>
@@ -32,7 +40,7 @@ export default class Employee extends React.Component {
               </div>
             </div>
           </div>
-          <img src={img} className='avatar' onMouseOver={this.src={gif}} onMouseOut={img} />
+          <img src={img} className='avatar' onMouseOver={this.mouseOver.bind(this)} onMouseOut={this.mouseOut.bind(this)} />
         </div>
       </div>
     );
