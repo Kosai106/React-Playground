@@ -25,6 +25,18 @@ ReactDOM.render(
     email="keo@billetto.com"
     img="./assets/images/Kevin.png"
     gif="https://media.giphy.com/media/9fbYYzdf6BbQA/giphy.gif"
+    gif="https://media.giphy.com/media/129rZZ3a4anp0Q/giphy.gif"
     />,
-  team
+  kevin
+);
+
+ReactDOM.render(
+  <Employee
+    name="Gorjan Dimitrov"
+    job="Growth Hacker"
+    email="gd@billetto.dk"
+    img="./assets/images/Gorjan.png"
+    gif="https://media.giphy.com/media/9fbYYzdf6BbQA/giphy.gif"
+    />,
+  gorjan
 );

@@ -114,4 +114,5 @@ body {
   height: 180px;
   background: #49B5E3;
   border-radius: 50%;
+  object-fit: cover;
 }

@@ -22,25 +22,19 @@ export default class Employee extends React.Component {
 
     return (
       <div className='outer-circle'>
-        <div className='inner-circle'>
+        <div className='inner-circle' onMouseOver={this.mouseOver.bind(this)} onMouseOut={this.mouseOut.bind(this)}>
           <div className='overlay'>
             <div className='contents'>
               <span className='name'>{name}</span>
               <span className='job'>{job}</span>
               <div className='links'>
-                <a href='#'>
+                <a href={`mailto:${email}?subject=Teampage`}>
                   <i className='fa fa-envelope-o'></i>
-                </a>
-                <a href='#'>
-                  <i className='fa fa-twitter'></i>
-                </a>
-                <a href='#'>
-                  <i className='fa fa-facebook'></i>
                 </a>
               </div>
             </div>
           </div>
-          <img src={img} className='avatar' onMouseOver={this.mouseOver.bind(this)} onMouseOut={this.mouseOut.bind(this)} />
+          {this.state.hover ? (<img src={gif} className='avatar'/>) : <img src={img} className='avatar'/>}
         </div>
       </div>
     );
