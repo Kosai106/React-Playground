@@ -32,7 +32,7 @@ export default class Layout extends React.Component {
             <h3>{title}</h3>
           </span>
         </div>
-        <div className="row inline">
+        <div className="row" style={{maxWidth: "400px", margin: "0 auto"}}>
           <span className="col-md-4">
             <button onClick={this.increaseCool.bind(this)} className="btn btn-primary">
               +

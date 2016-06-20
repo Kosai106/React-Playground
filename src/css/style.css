@@ -116,3 +116,16 @@ body {
   border-radius: 50%;
   object-fit: cover;
 }
+
+.employeelist {
+  display: flex;
+  flex-direction: row;
+}
+
+.employeelist .outer-circle {
+  margin-right: 25px;
+}
+
+.employeelist .outer-circle:last-of-type {
+  margin-right: 0px;
+}
