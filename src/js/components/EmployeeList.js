@@ -29,8 +29,6 @@ export default class EmployeeList extends React.Component {
             img="./assets/images/Sasha.png"
             gif="https://media.giphy.com/media/5xtDarnckdJfzSqLhW8/giphy.gif"
           />
-        </div>
-        <div className="row employeelist">
           <Employee
             name="Anders Fink"
             job="CMO"
@@ -38,6 +36,8 @@ export default class EmployeeList extends React.Component {
             img="./assets/images/Anders.png"
             gif="https://media.giphy.com/media/twOB11f03h78c/giphy.gif"
           />
+        </div>
+        <div className="row employeelist">
           <Employee
             name="Lasse Thomsen"
             job="Numbers"
@@ -50,6 +50,20 @@ export default class EmployeeList extends React.Component {
             job="Head of B2C Services"
             email="cl@billetto.com"
             img="./assets/images/Claus.png"
+            gif="https://media.giphy.com/media/nIM0pmYCPZ11S/giphy.gif"
+          />
+          <Employee
+            name="Matthew Pither"
+            job="Support"
+            email="mp@billetto.dk"
+            img="./assets/images/Matthew.png"
+            gif="https://media.giphy.com/media/5yLgoceFO3BdJW1zvFu/giphy.gif"
+          />
+          <Employee
+            name="Mie Christiansen"
+            job="Key Account Manager"
+            email="mc@billetto.com"
+            img="./assets/images/Mie.png"
             gif="https://media.giphy.com/media/nIM0pmYCPZ11S/giphy.gif"
           />
         </div>

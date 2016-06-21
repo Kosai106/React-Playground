@@ -34,7 +34,11 @@ export default class Employee extends React.Component {
               </div>
             </div>
           </div>
-          {this.state.hover ? (<img src={gif} className='avatar'/>) : <img src={img} className='avatar'/>}
+
+          {this.state.hover ? (<img src={gif} className='avatar'/>)
+                            :  <img src={img} className='avatar'/>
+          }
+
         </div>
       </div>
     );
